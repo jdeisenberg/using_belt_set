@@ -1,0 +1,87 @@
+
+    
+<!doctype html>
+<meta charset=utf8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=stylesheet href='../styles.css'>
+<script defer src='../script.js'></script>
+<title>WeekdayExample-Usingbeltset</title>
+<body>
+<script>window.relativeToRoot=".."</script>
+<script defer src="../block-script.js"></script>
+<div id='error-message'>
+  ⚠️ Oops! This page doesn't appear to define a <span>type</span> called <code>_</code>.
+</div>
+
+    <script>window.shouldCheckHashes=true</script>
+    <div class='container'>
+    
+    <div class='sidebar-wrapper'>
+    <div class='sidebar-expander'>Show navigation</div>
+    <div class='sidebar'>
+      <a href="../search.html" style="display: block; padding: 0 8px;">Search</a>
+      <div class='docs-listing'><a href="../index.html">Home</a></div>
+      <div class='table-of-contents'>
+      <div class='toc-header'>Page Contents</div>
+      <a href="#WeekdayExample-Usingbeltset" class='level-1 header'>WeekdayExample-Usingbeltset</a>
+<a href="#type-weekday" class='level-2 type'>weekday</a>
+<a href="#type-course" class='level-2 type'>course</a>
+<a href="#module-DayComparator" class='level-2 module'>DayComparator</a>
+<a href="#value-courses" class='level-2 value'>courses</a>
+<a href="#value-requested" class='level-2 value'>requested</a>
+<a href="#value-requestedSet" class='level-2 value'>requestedSet</a>
+<a href="#module-Set" class='level-2 module'>Set</a>
+<a href="#value-rooms" class='level-2 value'>rooms</a>
+      </div>
+      <div class='project-listing'><div class='project-title'>Package modules</div><a href="IntSetExample-Usingbeltset.html">IntSetExample-Usingbeltset</a>
+<a href="WeekdayExample-Usingbeltset.html">WeekdayExample-Usingbeltset</a>
+<a href="Fraction-Usingbeltset.html">Fraction-Usingbeltset</a>
+<a href="ColourExample-Usingbeltset.html">ColourExample-Usingbeltset</a>
+<a href="IntSetExample-Usingbeltset.html">IntSetExample-Usingbeltset</a>
+<a href="WeekdayExample-Usingbeltset.html">WeekdayExample-Usingbeltset</a>
+<a href="Fraction-Usingbeltset.html">Fraction-Usingbeltset</a>
+<a href="ColourExample-Usingbeltset.html">ColourExample-Usingbeltset</a></div>
+    </div>
+    </div>
+  
+    <div class='main'>
+    
+    <a href="#WeekdayExample-Usingbeltset" id="WeekdayExample-Usingbeltset"><h1>WeekdayExample-Usingbeltset</h1></a>
+
+<p><span class='missing'>This module does not have a toplevel documentation block.</span></p>
+<div class='doc-item'><h4 class='item'>type <a href="#type-weekday" id="type-weekday">weekday</a> = | M | T | W | Th | F</h4>
+
+<div class='body body-empty'></div></div>
+
+<div class='doc-item'><h4 class='item'>type <a href="#type-course" id="type-course">course</a> = {
+    subject: string,
+    room: string,
+    days: array(<a href="#type-weekday">weekday</a>)
+}</h4>
+
+<div class='body body-empty'></div></div>
+
+<div class='doc-item'><h4 class='item module'>module <a href="#module-DayComparator" id="module-DayComparator">DayComparator</a> : Belt.Id.MakeComparable</h4></div>
+
+<div class='doc-item'><h4 class='item'>let <a href="#value-courses" id="value-courses">courses</a> = array(<a href="#type-course">course</a>)</h4>
+
+<div class='body body-empty'></div></div>
+
+<div class='doc-item'><h4 class='item'>let <a href="#value-requested" id="value-requested">requested</a> = array(<a href="#module-DayComparator">DayComparator</a>.<a href="#type-DayComparator.t">t</a>)</h4>
+
+<div class='body body-empty'></div></div>
+
+<div class='doc-item'><h4 class='item'>let <a href="#value-requestedSet" id="value-requestedSet">requestedSet</a> = Belt.Set.t(<a href="#module-DayComparator">DayComparator</a>.<a href="#type-DayComparator.t">t</a>, <a href="#type-DayComparator.identity" title="DayComparator.identity">identity</a>)</h4>
+
+<div class='body body-empty'></div></div>
+
+<div class='doc-item'><h4 class='item module'>module <a href="#module-Set" id="module-Set">Set</a> : Belt.Set</h4></div>
+
+<div class='doc-item'><h4 class='item'>let <a href="#value-rooms" id="value-rooms">rooms</a> = array(string)</h4>
+
+<div class='body body-empty'></div></div>
+
+    </div>
+    <div class='right-blank'></div>
+    </div>
+  
