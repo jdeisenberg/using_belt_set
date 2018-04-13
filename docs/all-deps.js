@@ -5,14 +5,14 @@ let initializers = {
     165: function(module, exports, require) {'use strict';
 
 var $$Array = require(51);
-var Curry = require(6);
-var Caml_obj = require(21);
+var Curry = require(4);
+var Caml_obj = require(7);
 var Caml_weak = require(102);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Caml_int32 = require(36);
 var Pervasives = require(33);
-var Caml_primitive = require(13);
-var Caml_builtin_exceptions = require(8);
+var Caml_primitive = require(9);
+var Caml_builtin_exceptions = require(6);
 
 function length(x) {
   return x.length - 1 | 0;
@@ -968,8 +968,8 @@ exports.setsid = setsid;
 var Sys = require(29);
 var List = require(32);
 var $$Array = require(51);
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Js_exn = require(46);
 var Printf = require(47);
 var Caml_io = require(34);
@@ -977,13 +977,13 @@ var Hashtbl = require(118);
 var Callback = require(90);
 var Caml_sys = require(30);
 var Printexc = require(155);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Pervasives = require(33);
 var Caml_format = require(35);
 var Caml_string = require(39);
 var Caml_exceptions = require(31);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var Unix_error = Caml_exceptions.create("Unix.Unix_error");
 
@@ -3005,8 +3005,8 @@ exports.iter = iter;
 },
   158: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Caml_builtin_exceptions = require(8);
+var Curry = require(4);
+var Caml_builtin_exceptions = require(6);
 
 function merge(order, l1, l2) {
   if (l1) {
@@ -3188,9 +3188,9 @@ exports.merge = merge;
   157: function(module, exports, require) {'use strict';
 
 var List = require(32);
-var Block = require(22);
+var Block = require(8);
 var Bytes = require(42);
-var Curry = require(6);
+var Curry = require(4);
 var Buffer = require(44);
 var Js_exn = require(46);
 var Printf = require(47);
@@ -3203,7 +3203,7 @@ var Caml_string = require(39);
 var Caml_exceptions = require(31);
 var CamlinternalFormat = require(48);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 var CamlinternalFormatBasics = require(41);
 
 function next_char(ib) {
@@ -5156,8 +5156,8 @@ exports.unescaped = unescaped;
 },
   156: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Caml_obj = require(21);
+var Curry = require(4);
+var Caml_obj = require(7);
 var Caml_exceptions = require(31);
 
 var Empty = Caml_exceptions.create("Queue.Empty");
@@ -5359,16 +5359,16 @@ exports.transfer = transfer;
 
 var Obj = require(91);
 var $$Array = require(51);
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Buffer = require(44);
 var Js_exn = require(46);
 var Printf = require(47);
 var Caml_io = require(34);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Pervasives = require(33);
 var Caml_backtrace = require(93);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var printers = [/* [] */0];
 
@@ -5893,11 +5893,11 @@ exports.exn_slot_name = exn_slot_name;
   154: function(module, exports, require) {'use strict';
 
 var $$Array = require(51);
-var Curry = require(6);
+var Curry = require(4);
 var Js_exn = require(46);
 var Lexing = require(147);
-var Caml_obj = require(21);
-var Caml_array = require(7);
+var Caml_obj = require(7);
+var Caml_array = require(5);
 var Caml_parser = require(101);
 var Caml_exceptions = require(31);
 
@@ -6225,8 +6225,8 @@ exports.$$Set = $$Set$1;
   151: function(module, exports, require) {'use strict';
 
 var List = require(32);
-var Curry = require(6);
-var Caml_builtin_exceptions = require(8);
+var Curry = require(4);
+var Caml_builtin_exceptions = require(6);
 
 function Make(funarg) {
   var height = function (param) {
@@ -7006,8 +7006,8 @@ exports.Make = Make;
 },
   149: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Caml_builtin_exceptions = require(8);
+var Curry = require(4);
+var Caml_builtin_exceptions = require(6);
 
 function Make(funarg) {
   var height = function (param) {
@@ -7782,13 +7782,13 @@ exports.merge = merge;
   147: function(module, exports, require) {'use strict';
 
 var Bytes = require(42);
-var Curry = require(6);
-var Caml_array = require(7);
+var Curry = require(4);
+var Caml_array = require(5);
 var Caml_bytes = require(49);
 var Caml_lexer = require(96);
 var Pervasives = require(33);
 var Caml_string = require(39);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function engine(tbl, state, buf) {
   var result = Caml_lexer.caml_lex_engine(tbl, state, buf);
@@ -8017,8 +8017,8 @@ exports.new_engine = new_engine;
   146: function(module, exports, require) {'use strict';
 
 var Obj = require(91);
-var Block = require(22);
-var Caml_obj = require(21);
+var Block = require(8);
+var Caml_obj = require(7);
 var CamlinternalLazy = require(104);
 
 function from_fun(f) {
@@ -8121,7 +8121,7 @@ exports.from_opt = from_opt;
 },
   143: function(module, exports, require) {'use strict';
 
-var Block = require(22);
+var Block = require(8);
 
 function reify_type(x) {
   if (typeof x === "undefined") {
@@ -9132,7 +9132,7 @@ exports.append = append;
 },
   130: function(module, exports, require) {'use strict';
 
-var Block = require(22);
+var Block = require(8);
 
 function classify(x) {
   var ty = typeof x;
@@ -9447,14 +9447,14 @@ exports.Console = Console;
 
 var Char = require(43);
 var List = require(32);
-var Block = require(22);
+var Block = require(8);
 var Bytes = require(42);
 var Stream = require(117);
 var Hashtbl = require(118);
 var Caml_int32 = require(36);
 var Caml_format = require(35);
 var Caml_string = require(39);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var initial_buffer = Caml_string.caml_create_string(32);
 
@@ -10170,16 +10170,16 @@ exports.make_lexer = make_lexer;
   118: function(module, exports, require) {'use strict';
 
 var $$Array = require(51);
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Random = require(110);
-var Caml_obj = require(21);
+var Caml_obj = require(7);
 var Caml_hash = require(58);
-var Caml_array = require(7);
-var Caml_primitive = require(13);
+var Caml_array = require(5);
+var Caml_primitive = require(9);
 var CamlinternalLazy = require(104);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function hash(x) {
   return Caml_hash.caml_hash(10, 100, 0, x);
@@ -10963,14 +10963,14 @@ exports.seeded_hash_param = seeded_hash_param;
   117: function(module, exports, require) {'use strict';
 
 var List = require(32);
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Caml_bytes = require(49);
 var Pervasives = require(33);
 var Caml_string = require(39);
 var Caml_exceptions = require(31);
 var CamlinternalLazy = require(104);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var Failure = Caml_exceptions.create("Stream.Failure");
 
@@ -11460,8 +11460,8 @@ exports.dump = dump;
 },
   115: function(module, exports, require) {'use strict';
 
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Printf = require(47);
 var Caml_gc = require(95);
 
@@ -11738,19 +11738,19 @@ exports.delete_alarm = delete_alarm;
 },
   114: function(module, exports, require) {'use strict';
 
-var Block = require(22);
+var Block = require(8);
 var Bytes = require(42);
-var Curry = require(6);
+var Curry = require(4);
 var Buffer = require(44);
 var $$String = require(45);
 var Caml_io = require(34);
-var Caml_obj = require(21);
+var Caml_obj = require(7);
 var Pervasives = require(33);
 var Caml_string = require(39);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 var Caml_exceptions = require(31);
 var CamlinternalFormat = require(48);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function add_queue(x, q) {
   var c = /* Cons */[/* record */[
@@ -13538,8 +13538,8 @@ exports.pp_get_all_formatter_output_functions = pp_get_all_formatter_output_func
 },
   109: function(module, exports, require) {'use strict';
 
-var Block = require(22);
-var Curry = require(6);
+var Block = require(8);
+var Curry = require(4);
 var Buffer = require(44);
 var Js_exn = require(46);
 var Printf = require(47);
@@ -13550,7 +13550,7 @@ var Pervasives = require(33);
 var Caml_string = require(39);
 var CamlinternalLazy = require(104);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function generic_basename(is_dir_sep, current_dir_name, name) {
   if (name === "") {
@@ -13908,16 +13908,16 @@ exports.quote = quote$1;
   110: function(module, exports, require) {'use strict';
 
 var $$Array = require(51);
-var Curry = require(6);
+var Curry = require(4);
 var Int32 = require(111);
 var Int64 = require(112);
 var Digest = require(108);
 var Caml_sys = require(30);
 var Nativeint = require(113);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Caml_int64 = require(37);
 var Caml_string = require(39);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function assign(st1, st2) {
   $$Array.blit(st2[/* st */0], 0, st1[/* st */0], 0, 55);
@@ -14220,7 +14220,7 @@ exports.set_state = set_state;
   113: function(module, exports, require) {'use strict';
 
 var Caml_format = require(35);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 
 function succ(n) {
   return n + 1;
@@ -14360,7 +14360,7 @@ exports.compare = compare;
   111: function(module, exports, require) {'use strict';
 
 var Caml_format = require(35);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 
 function succ(n) {
   return n + 1 | 0;
@@ -14420,7 +14420,7 @@ var Caml_md5 = require(97);
 var Pervasives = require(33);
 var Caml_string = require(39);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function string(str) {
   return Caml_md5.caml_md5_string(str, 0, str.length);
@@ -14728,16 +14728,16 @@ exports.pow = pow;
 var Obj = require(91);
 var List = require(32);
 var $$Array = require(51);
-var Curry = require(6);
+var Curry = require(4);
 var Caml_oo = require(99);
-var Caml_obj = require(21);
-var Caml_array = require(7);
+var Caml_obj = require(7);
+var Caml_array = require(5);
 var Caml_int32 = require(36);
 var Belt_MapInt = require(69);
 var Caml_string = require(39);
 var Belt_MapString = require(71);
 var Caml_exceptions = require(31);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function copy(o) {
   return Caml_exceptions.caml_set_oo_id(Caml_obj.caml_obj_dup(o));
@@ -15488,7 +15488,7 @@ exports.stats = stats;
   104: function(module, exports, require) {'use strict';
 
 var Obj = require(91);
-var Curry = require(6);
+var Curry = require(4);
 var Caml_exceptions = require(31);
 
 var Undefined = Caml_exceptions.create("CamlinternalLazy.Undefined");
@@ -15555,8 +15555,8 @@ exports.force_val = force_val;
 },
   102: function(module, exports, require) {'use strict';
 
-var Caml_obj = require(21);
-var Caml_array = require(7);
+var Caml_obj = require(7);
+var Caml_array = require(5);
 var Js_primitive = require(103);
 
 function caml_weak_create(n) {
@@ -16036,7 +16036,7 @@ exports.caml_set_parser_trace = caml_set_parser_trace;
 },
   100: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Caml_oo = require(99);
 
 function js(label, cacheid, obj, args) {
@@ -16090,8 +16090,8 @@ exports.js8 = js8;
 },
   99: function(module, exports, require) {'use strict';
 
-var Caml_array = require(7);
-var Caml_builtin_exceptions = require(8);
+var Caml_array = require(5);
+var Caml_builtin_exceptions = require(6);
 
 var caml_methods_cache = Caml_array.caml_make_vect(1000, 0);
 
@@ -16133,8 +16133,8 @@ exports.caml_get_public_method = caml_get_public_method;
 },
   98: function(module, exports, require) {'use strict';
 
-var Caml_obj = require(21);
-var Caml_builtin_exceptions = require(8);
+var Caml_obj = require(7);
+var Caml_builtin_exceptions = require(6);
 
 function init_mod(loc, shape) {
   var undef_module = function () {
@@ -16404,7 +16404,7 @@ exports.caml_md5_string = caml_md5_string;
 },
   96: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function fail() {
   throw [
@@ -16889,7 +16889,7 @@ exports.is_list_empty = is_list_empty;
 },
   93: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function caml_convert_raw_backtrace_slot() {
   throw [
@@ -16923,9 +16923,9 @@ exports.register_exception = register_exception;
   91: function(module, exports, require) {'use strict';
 
 var Marshal = require(92);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var double_field = Caml_array.caml_array_get;
 
@@ -17072,7 +17072,7 @@ exports.unmarshal = unmarshal;
 
 var Caml_string = require(39);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function to_buffer(buff, ofs, len, _, _$1) {
   if (ofs < 0 || len < 0 || ofs > (buff.length - len | 0)) {
@@ -17252,9 +17252,9 @@ exports.unsafe_of_string = unsafe_of_string;
 },
   86: function(module, exports, require) {'use strict';
 
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function dims() {
   var n = Caml_missing_polyfill.not_implemented("caml_ba_num_dims not implemented by bucklescript yet\n");
@@ -17526,7 +17526,7 @@ exports.reshape_3 = reshape_3;
 },
   85: function(module, exports, require) {'use strict';
 
-var Belt_internalAVLset = require(5);
+var Belt_internalAVLset = require(12);
 var Belt_internalSetString = require(81);
 
 function add(t, x) {
@@ -17889,7 +17889,7 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   84: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 
 function forEachU(s, f, action) {
   for(var i = s; i <= f; ++i){
@@ -18009,7 +18009,7 @@ exports.someBy = someBy;
 },
   83: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 
 function getExn(param) {
   if (param) {
@@ -18134,7 +18134,7 @@ exports.cmp = cmp;
 },
   82: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 
 function make() {
   return {
@@ -18280,8 +18280,8 @@ exports.dynamicPopIter = dynamicPopIter;
 },
   79: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_internalAVLset = require(5);
+var Curry = require(4);
+var Belt_internalAVLset = require(12);
 var Belt_SortArrayString = require(80);
 var Belt_internalSetString = require(81);
 
@@ -18804,7 +18804,7 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   81: function(module, exports, require) {'use strict';
 
-var Belt_internalAVLset = require(5);
+var Belt_internalAVLset = require(12);
 var Belt_SortArrayString = require(80);
 
 function has(_t, x) {
@@ -19029,7 +19029,7 @@ exports.fromArray = fromArray;
 },
   80: function(module, exports, require) {'use strict';
 
-var Belt_Array = require(10);
+var Belt_Array = require(14);
 
 function sortedLengthAuxMore(xs, _prec, _acc, len) {
   while(true) {
@@ -19442,10 +19442,10 @@ exports.diff = diff;
 },
   78: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArrayInt = require(15);
-var Belt_internalAVLset = require(5);
-var Belt_internalSetInt = require(14);
+var Curry = require(4);
+var Belt_SortArrayInt = require(18);
+var Belt_internalAVLset = require(12);
+var Belt_internalSetInt = require(17);
 
 function remove0(nt, x) {
   var k = nt.value;
@@ -19966,9 +19966,9 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   77: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArray = require(9);
-var Belt_internalAVLset = require(5);
+var Curry = require(4);
+var Belt_SortArray = require(13);
+var Belt_internalAVLset = require(12);
 
 function remove0(nt, x, cmp) {
   var k = nt.value;
@@ -20527,7 +20527,7 @@ exports.ofSortedArrayUnsafe = ofSortedArrayUnsafe;
 },
   76: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 
 var $$null = null;
 
@@ -20843,7 +20843,7 @@ exports.toArray = toArray;
 },
   75: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalAVLtree = require(68);
 var Belt_internalMapString = require(72);
 
@@ -21219,7 +21219,7 @@ exports.mapWithKey = mapWithKey;
 },
   74: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalMapInt = require(70);
 var Belt_internalAVLtree = require(68);
 
@@ -21595,7 +21595,7 @@ exports.mapWithKey = mapWithKey;
 },
   73: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalAVLtree = require(68);
 
 function removeMutateAux(nt, x, cmp) {
@@ -22008,7 +22008,7 @@ exports.mapWithKey = mapWithKey;
 },
   71: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalAVLtree = require(68);
 var Belt_internalMapString = require(72);
 
@@ -22320,9 +22320,9 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   72: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArray = require(9);
-var Caml_primitive = require(13);
+var Curry = require(4);
+var Belt_SortArray = require(13);
+var Caml_primitive = require(9);
 var Belt_internalAVLtree = require(68);
 
 function add(t, x, data) {
@@ -22711,7 +22711,7 @@ exports.fromArray = fromArray;
 },
   69: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalMapInt = require(70);
 var Belt_internalAVLtree = require(68);
 
@@ -23023,9 +23023,9 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   70: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArray = require(9);
-var Caml_primitive = require(13);
+var Curry = require(4);
+var Belt_SortArray = require(13);
+var Caml_primitive = require(9);
 var Belt_internalAVLtree = require(68);
 
 function add(t, x, data) {
@@ -23414,7 +23414,7 @@ exports.fromArray = fromArray;
 },
   66: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_MapDict = require(67);
 
 function fromArray(data, id) {
@@ -23782,7 +23782,7 @@ exports.checkInvariantInternal = checkInvariantInternal;
 },
   67: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Belt_internalAVLtree = require(68);
 
 function set(t, newK, newD, cmp) {
@@ -24201,8 +24201,8 @@ exports.mapWithKey = mapWithKey;
 },
   68: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArray = require(9);
+var Curry = require(4);
+var Belt_SortArray = require(13);
 
 function treeHeight(n) {
   if (n !== null) {
@@ -25391,8 +25391,8 @@ exports.removeMinAuxWithRootMutate = removeMinAuxWithRootMutate;
 },
   65: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_Array = require(10);
+var Curry = require(4);
+var Belt_Array = require(14);
 
 function head(x) {
   if (x) {
@@ -27587,8 +27587,8 @@ exports.getBucketHistogram = getBucketHistogram;
 },
   62: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_Array = require(10);
+var Curry = require(4);
+var Belt_Array = require(14);
 var Belt_internalBucketsType = require(56);
 
 function copyAuxCont(_c, _prec) {
@@ -28385,7 +28385,7 @@ exports.ofArray = ofArray;
 
 var Caml_int32 = require(36);
 var Caml_queue = require(59);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function rotl32(x, n) {
   return (x << n) | (x >>> (32 - n | 0));
@@ -28871,8 +28871,8 @@ exports.ofArray = ofArray;
 },
   55: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_Array = require(10);
+var Curry = require(4);
+var Belt_Array = require(14);
 var Belt_internalBucketsType = require(56);
 
 function copyAuxCont(_c, _prec) {
@@ -29343,11 +29343,11 @@ exports.fast_sort = fast_sort;
 },
   51: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Js_exn = require(46);
-var Caml_array = require(7);
+var Caml_array = require(5);
 var Caml_exceptions = require(31);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function init(l, f) {
   if (l === 0) {
@@ -29775,21 +29775,21 @@ exports.fast_sort = fast_sort;
 
 var Sys = require(29);
 var List = require(32);
-var Block = require(22);
+var Block = require(8);
 var Bytes = require(42);
-var Curry = require(6);
+var Curry = require(4);
 var Buffer = require(44);
 var Js_exn = require(46);
 var Printf = require(47);
 var $$String = require(45);
-var Caml_obj = require(21);
-var Caml_array = require(7);
+var Caml_obj = require(7);
+var Caml_array = require(5);
 var Pervasives = require(33);
 var Caml_format = require(35);
 var Caml_string = require(39);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 var Caml_exceptions = require(31);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 var Bad = Caml_exceptions.create("Arg.Bad");
 
@@ -30518,7 +30518,7 @@ exports.current = current;
 },
   47: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Buffer = require(44);
 var Pervasives = require(33);
 var CamlinternalFormat = require(48);
@@ -30603,23 +30603,23 @@ exports.kprintf = kprintf;
   48: function(module, exports, require) {'use strict';
 
 var Char = require(43);
-var Block = require(22);
+var Block = require(8);
 var Bytes = require(42);
-var Curry = require(6);
+var Curry = require(4);
 var Buffer = require(44);
 var Js_exn = require(46);
 var $$String = require(45);
 var Caml_io = require(34);
-var Caml_obj = require(21);
+var Caml_obj = require(7);
 var Caml_bytes = require(49);
 var Caml_float = require(50);
 var Caml_int32 = require(36);
 var Pervasives = require(33);
 var Caml_format = require(35);
 var Caml_string = require(39);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 var Caml_exceptions = require(31);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 var CamlinternalFormatBasics = require(41);
 
 function create_char_set() {
@@ -37196,7 +37196,7 @@ exports.caml_log10_float = caml_log10_float;
 },
   49: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function get(s, i) {
   if (i < 0 || i >= s.length) {
@@ -37273,11 +37273,11 @@ exports.raiseUriError = raiseUriError;
   44: function(module, exports, require) {'use strict';
 
 var Bytes = require(42);
-var Curry = require(6);
+var Curry = require(4);
 var $$String = require(45);
 var Pervasives = require(33);
 var Caml_string = require(39);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function create(n) {
   var n$1 = n < 1 ? 1 : n;
@@ -37627,7 +37627,7 @@ var List = require(32);
 var Bytes = require(42);
 var Caml_int32 = require(36);
 var Caml_string = require(39);
-var Caml_primitive = require(13);
+var Caml_primitive = require(9);
 
 function make(n, c) {
   return Caml_string.bytes_to_string(Bytes.make(n, c));
@@ -37830,12 +37830,12 @@ exports.compare = compare;
 
 var Char = require(43);
 var List = require(32);
-var Curry = require(6);
-var Caml_obj = require(21);
+var Curry = require(4);
+var Caml_obj = require(7);
 var Caml_int32 = require(36);
 var Caml_string = require(39);
-var Caml_primitive = require(13);
-var Caml_builtin_exceptions = require(8);
+var Caml_primitive = require(9);
+var Caml_builtin_exceptions = require(6);
 
 function make(n, c) {
   var s = Caml_string.caml_create_string(n);
@@ -38331,7 +38331,7 @@ exports.unsafe_of_string = unsafe_of_string;
   43: function(module, exports, require) {'use strict';
 
 var Caml_string = require(39);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function chr(n) {
   if (n < 0 || n > 255) {
@@ -38431,10 +38431,10 @@ exports.compare = compare;
 },
   32: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Caml_obj = require(21);
+var Curry = require(4);
+var Caml_obj = require(7);
 var Pervasives = require(33);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function length(l) {
   var _len = 0;
@@ -40082,14 +40082,14 @@ exports.merge = merge;
 },
   33: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Caml_io = require(34);
 var Caml_sys = require(30);
 var Caml_format = require(35);
 var Caml_string = require(39);
 var Caml_exceptions = require(31);
 var Caml_missing_polyfill = require(40);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 var CamlinternalFormatBasics = require(41);
 
 function failwith(s) {
@@ -40722,7 +40722,7 @@ exports.do_at_exit = do_at_exit;
 },
   41: function(module, exports, require) {'use strict';
 
-var Block = require(22);
+var Block = require(8);
 
 function erase_rel(param) {
   if (typeof param === "number") {
@@ -40961,7 +40961,7 @@ exports.not_implemented = not_implemented;
 },
   39: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function string_of_char(prim) {
   return String.fromCharCode(prim);
@@ -41159,11 +41159,11 @@ exports.get = get;
 },
   35: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
+var Curry = require(4);
 var Caml_int32 = require(36);
 var Caml_int64 = require(37);
 var Caml_utils = require(38);
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function caml_failwith(s) {
   throw [
@@ -41962,8 +41962,8 @@ exports.caml_nativeint_of_string = caml_nativeint_of_string;
 
 var Caml_int32 = require(36);
 var Caml_utils = require(38);
-var Caml_primitive = require(13);
-var Caml_builtin_exceptions = require(8);
+var Caml_primitive = require(9);
+var Caml_builtin_exceptions = require(6);
 
 var min_int = /* record */[
   /* hi */-2147483648,
@@ -42620,7 +42620,7 @@ exports.repeat = repeat;
 },
   36: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function div(x, y) {
   if (y === 0) {
@@ -42664,8 +42664,8 @@ exports.imul = imul;
 },
   34: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Caml_builtin_exceptions = require(8);
+var Curry = require(4);
+var Caml_builtin_exceptions = require(6);
 
 function $caret(prim, prim$1) {
   return prim + prim$1;
@@ -42969,7 +42969,7 @@ exports.isCamlExceptionOrOpenVariant = isCamlExceptionOrOpenVariant;
 },
   30: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function caml_sys_getenv(s) {
   var match = typeof (process) === "undefined" ? undefined : (process);
@@ -43071,10 +43071,10 @@ exports.caml_sys_file_exists = caml_sys_file_exists;
   27: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Block = require(22);
-var Belt_Id = require(18);
-var Belt_Set = require(19);
-var Caml_obj = require(21);
+var Block = require(8);
+var Belt_Id = require(3);
+var Belt_Set = require(21);
+var Caml_obj = require(7);
 
 var cmp = Caml_obj.caml_compare;
 
@@ -43120,8 +43120,8 @@ exports.cset3 = cset3;
   26: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Block = require(22);
-var Caml_obj = require(21);
+var Block = require(8);
+var Caml_obj = require(7);
 
 console.log(Caml_obj.caml_compare(/* Red */0, /* Blue */2));
 
@@ -43169,8 +43169,8 @@ console.log(Caml_obj.caml_compare(/* Named */Block.__(1, ["beige"]), /* Named */
   24: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Belt_Id = require(18);
-var Caml_obj = require(21);
+var Belt_Id = require(3);
+var Caml_obj = require(7);
 
 var courses = /* array */[
   /* record */[
@@ -43218,10 +43218,10 @@ exports.DayComparator = DayComparator;
   23: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Belt_Id = require(18);
-var Belt_Set = require(19);
-var Caml_obj = require(21);
-var Belt_Array = require(10);
+var Belt_Id = require(3);
+var Belt_Set = require(21);
+var Caml_obj = require(7);
+var Belt_Array = require(14);
 
 var courses = /* array */[
   /* record */[
@@ -43284,12 +43284,12 @@ exports.rooms = rooms;
 /* DayComparator Not a pure module */
 //# sourceURL=./node_modules/.docre/DOCRE_CODE_BLOCK_5.re_ppx.js
 },
-  17: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
+  20: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Belt_Id = require(18);
-var Belt_Set = require(19);
-var Caml_obj = require(21);
+var Belt_Id = require(3);
+var Belt_Set = require(21);
+var Caml_obj = require(7);
 
 var courses = /* array */[
   /* record */[
@@ -43341,359 +43341,8 @@ exports.requestedSet = requestedSet;
 },
   21: function(module, exports, require) {'use strict';
 
-var Block = require(22);
-var Caml_primitive = require(13);
-var Caml_builtin_exceptions = require(8);
-
-function caml_obj_block(tag, size) {
-  var v = new Array(size);
-  v.tag = tag;
-  return v;
-}
-
-function caml_obj_dup(x) {
-  var len = x.length | 0;
-  var v = new Array(len);
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    v[i] = x[i];
-  }
-  v.tag = x.tag | 0;
-  return v;
-}
-
-function caml_obj_truncate(x, new_size) {
-  var len = x.length | 0;
-  if (new_size <= 0 || new_size > len) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "Obj.truncate"
-        ];
-  } else if (len !== new_size) {
-    for(var i = new_size ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-      x[i] = 0;
-    }
-    x.length = new_size;
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-function caml_lazy_make_forward(x) {
-  return Block.__(250, [x]);
-}
-
-function caml_update_dummy(x, y) {
-  var len = y.length | 0;
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    x[i] = y[i];
-  }
-  var y_tag = y.tag | 0;
-  if (y_tag !== 0) {
-    x.tag = y_tag;
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-function caml_compare(_a, _b) {
-  while(true) {
-    var b = _b;
-    var a = _a;
-    if (a === b) {
-      return 0;
-    } else {
-      var a_type = typeof a;
-      var b_type = typeof b;
-      if (a_type === "string") {
-        return Caml_primitive.caml_string_compare(a, b);
-      } else {
-        var is_a_number = +(a_type === "number");
-        var is_b_number = +(b_type === "number");
-        if (is_a_number !== 0) {
-          if (is_b_number !== 0) {
-            return Caml_primitive.caml_int_compare(a, b);
-          } else {
-            return -1;
-          }
-        } else if (is_b_number !== 0) {
-          return 1;
-        } else if (a_type === "boolean" || a_type === "undefined" || a === null) {
-          var x = a;
-          var y = b;
-          if (x === y) {
-            return 0;
-          } else if (x < y) {
-            return -1;
-          } else {
-            return 1;
-          }
-        } else if (a_type === "function" || b_type === "function") {
-          throw [
-                Caml_builtin_exceptions.invalid_argument,
-                "compare: functional value"
-              ];
-        } else {
-          var tag_a = a.tag | 0;
-          var tag_b = b.tag | 0;
-          if (tag_a === 250) {
-            _a = a[0];
-            continue ;
-            
-          } else if (tag_b === 250) {
-            _b = b[0];
-            continue ;
-            
-          } else if (tag_a === 248) {
-            return Caml_primitive.caml_int_compare(a[1], b[1]);
-          } else if (tag_a === 251) {
-            throw [
-                  Caml_builtin_exceptions.invalid_argument,
-                  "equal: abstract value"
-                ];
-          } else if (tag_a !== tag_b) {
-            if (tag_a < tag_b) {
-              return -1;
-            } else {
-              return 1;
-            }
-          } else {
-            var len_a = a.length | 0;
-            var len_b = b.length | 0;
-            if (len_a === len_b) {
-              var a$1 = a;
-              var b$1 = b;
-              var _i = 0;
-              var same_length = len_a;
-              while(true) {
-                var i = _i;
-                if (i === same_length) {
-                  return 0;
-                } else {
-                  var res = caml_compare(a$1[i], b$1[i]);
-                  if (res !== 0) {
-                    return res;
-                  } else {
-                    _i = i + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            } else if (len_a < len_b) {
-              var a$2 = a;
-              var b$2 = b;
-              var _i$1 = 0;
-              var short_length = len_a;
-              while(true) {
-                var i$1 = _i$1;
-                if (i$1 === short_length) {
-                  return -1;
-                } else {
-                  var res$1 = caml_compare(a$2[i$1], b$2[i$1]);
-                  if (res$1 !== 0) {
-                    return res$1;
-                  } else {
-                    _i$1 = i$1 + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            } else {
-              var a$3 = a;
-              var b$3 = b;
-              var _i$2 = 0;
-              var short_length$1 = len_b;
-              while(true) {
-                var i$2 = _i$2;
-                if (i$2 === short_length$1) {
-                  return 1;
-                } else {
-                  var res$2 = caml_compare(a$3[i$2], b$3[i$2]);
-                  if (res$2 !== 0) {
-                    return res$2;
-                  } else {
-                    _i$2 = i$2 + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            }
-          }
-        }
-      }
-    }
-  };
-}
-
-function caml_equal(_a, _b) {
-  while(true) {
-    var b = _b;
-    var a = _a;
-    if (a === b) {
-      return /* true */1;
-    } else {
-      var a_type = typeof a;
-      if (a_type === "string" || a_type === "number" || a_type === "boolean" || a_type === "undefined" || a === null) {
-        return /* false */0;
-      } else {
-        var b_type = typeof b;
-        if (a_type === "function" || b_type === "function") {
-          throw [
-                Caml_builtin_exceptions.invalid_argument,
-                "equal: functional value"
-              ];
-        } else if (b_type === "number" || b_type === "undefined" || b === null) {
-          return /* false */0;
-        } else {
-          var tag_a = a.tag | 0;
-          var tag_b = b.tag | 0;
-          if (tag_a === 250) {
-            _a = a[0];
-            continue ;
-            
-          } else if (tag_b === 250) {
-            _b = b[0];
-            continue ;
-            
-          } else if (tag_a === 248) {
-            return +(a[1] === b[1]);
-          } else if (tag_a === 251) {
-            throw [
-                  Caml_builtin_exceptions.invalid_argument,
-                  "equal: abstract value"
-                ];
-          } else if (tag_a !== tag_b) {
-            return /* false */0;
-          } else {
-            var len_a = a.length | 0;
-            var len_b = b.length | 0;
-            if (len_a === len_b) {
-              var a$1 = a;
-              var b$1 = b;
-              var _i = 0;
-              var same_length = len_a;
-              while(true) {
-                var i = _i;
-                if (i === same_length) {
-                  return /* true */1;
-                } else if (caml_equal(a$1[i], b$1[i])) {
-                  _i = i + 1 | 0;
-                  continue ;
-                  
-                } else {
-                  return /* false */0;
-                }
-              };
-            } else {
-              return /* false */0;
-            }
-          }
-        }
-      }
-    }
-  };
-}
-
-function caml_equal_null(x, y) {
-  if (y !== null) {
-    return caml_equal(x, y);
-  } else {
-    return +(x === y);
-  }
-}
-
-function caml_equal_undefined(x, y) {
-  if (y !== undefined) {
-    return caml_equal(x, y);
-  } else {
-    return +(x === y);
-  }
-}
-
-function caml_equal_nullable(x, y) {
-  if (y == null) {
-    return +(x === y);
-  } else {
-    return caml_equal(x, y);
-  }
-}
-
-function caml_notequal(a, b) {
-  return 1 - caml_equal(a, b);
-}
-
-function caml_greaterequal(a, b) {
-  return +(caml_compare(a, b) >= 0);
-}
-
-function caml_greaterthan(a, b) {
-  return +(caml_compare(a, b) > 0);
-}
-
-function caml_lessequal(a, b) {
-  return +(caml_compare(a, b) <= 0);
-}
-
-function caml_lessthan(a, b) {
-  return +(caml_compare(a, b) < 0);
-}
-
-function caml_min(x, y) {
-  if (caml_compare(x, y) <= 0) {
-    return x;
-  } else {
-    return y;
-  }
-}
-
-function caml_max(x, y) {
-  if (caml_compare(x, y) >= 0) {
-    return x;
-  } else {
-    return y;
-  }
-}
-
-exports.caml_obj_block = caml_obj_block;
-exports.caml_obj_dup = caml_obj_dup;
-exports.caml_obj_truncate = caml_obj_truncate;
-exports.caml_lazy_make_forward = caml_lazy_make_forward;
-exports.caml_update_dummy = caml_update_dummy;
-exports.caml_compare = caml_compare;
-exports.caml_equal = caml_equal;
-exports.caml_equal_null = caml_equal_null;
-exports.caml_equal_undefined = caml_equal_undefined;
-exports.caml_equal_nullable = caml_equal_nullable;
-exports.caml_notequal = caml_notequal;
-exports.caml_greaterequal = caml_greaterequal;
-exports.caml_greaterthan = caml_greaterthan;
-exports.caml_lessthan = caml_lessthan;
-exports.caml_lessequal = caml_lessequal;
-exports.caml_min = caml_min;
-exports.caml_max = caml_max;
-/* No side effect */
-//# sourceURL=./node_modules/bs-platform/lib/js/caml_obj.js
-},
-  22: function(module, exports, require) {'use strict';
-
-
-function __(tag, block) {
-  block.tag = tag;
-  return block;
-}
-
-exports.__ = __;
-/* No side effect */
-//# sourceURL=./node_modules/bs-platform/lib/js/block.js
-},
-  19: function(module, exports, require) {'use strict';
-
-var Curry = require(6);
-var Belt_SetDict = require(20);
+var Curry = require(4);
+var Belt_SetDict = require(22);
 
 function fromArray(data, id) {
   var cmp = id[/* cmp */0];
@@ -44008,9 +43657,9 @@ exports.packIdData = packIdData;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_Set.js
 },
-  20: function(module, exports, require) {'use strict';
+  22: function(module, exports, require) {'use strict';
 
-var Belt_internalAVLset = require(5);
+var Belt_internalAVLset = require(12);
 
 function add(t, x, cmp) {
   if (t !== null) {
@@ -44374,81 +44023,12 @@ exports.checkInvariantInternal = checkInvariantInternal;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_SetDict.js
 },
-  18: function(module, exports, require) {'use strict';
-
-var Curry = require(6);
-
-function MakeComparableU(M) {
-  var cmp = M[/* cmp */0];
-  return /* module */[/* cmp */cmp];
-}
-
-function MakeComparable(M) {
-  var cmp = M[/* cmp */0];
-  var cmp$1 = Curry.__2(cmp);
-  return /* module */[/* cmp */cmp$1];
-}
-
-function comparableU(cmp) {
-  return /* module */[/* cmp */cmp];
-}
-
-function comparable(cmp) {
-  var cmp$1 = Curry.__2(cmp);
-  return /* module */[/* cmp */cmp$1];
-}
-
-function MakeHashableU(M) {
-  var hash = M[/* hash */0];
-  var eq = M[/* eq */1];
-  return /* module */[
-          /* hash */hash,
-          /* eq */eq
-        ];
-}
-
-function MakeHashable(M) {
-  var hash = M[/* hash */0];
-  var hash$1 = Curry.__1(hash);
-  var eq = M[/* eq */1];
-  var eq$1 = Curry.__2(eq);
-  return /* module */[
-          /* hash */hash$1,
-          /* eq */eq$1
-        ];
-}
-
-function hashableU(hash, eq) {
-  return /* module */[
-          /* hash */hash,
-          /* eq */eq
-        ];
-}
-
-function hashable(hash, eq) {
-  var hash$1 = Curry.__1(hash);
-  var eq$1 = Curry.__2(eq);
-  return /* module */[
-          /* hash */hash$1,
-          /* eq */eq$1
-        ];
-}
-
-exports.MakeComparableU = MakeComparableU;
-exports.MakeComparable = MakeComparable;
-exports.comparableU = comparableU;
-exports.comparable = comparable;
-exports.MakeHashableU = MakeHashableU;
-exports.MakeHashable = MakeHashable;
-exports.hashableU = hashableU;
-exports.hashable = hashable;
-/* No side effect */
-//# sourceURL=./node_modules/bs-platform/lib/js/belt_Id.js
-},
-  16: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
+  19: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Caml_primitive = require(13);
+var Belt_Id = require(3);
+var Caml_obj = require(7);
+var Caml_primitive = require(9);
 
 var courses = /* array */[
   /* record */[
@@ -44483,6 +44063,10 @@ var requested = /* int array */[
   /* W */2
 ];
 
+var cmp = Caml_obj.caml_compare;
+
+var DayComparator = Belt_Id.MakeComparable(/* module */[/* cmp */cmp]);
+
 console.log(Caml_primitive.caml_int_compare(3, 5));
 
 console.log(Caml_primitive.caml_int_compare(3, 3));
@@ -44497,13 +44081,14 @@ console.log(Caml_primitive.caml_int_compare(/* F */4, /* W */2));
 
 exports.courses = courses;
 exports.requested = requested;
-/*  Not a pure module */
+exports.DayComparator = DayComparator;
+/* DayComparator Not a pure module */
 //# sourceURL=./node_modules/.docre/DOCRE_CODE_BLOCK_3.re_ppx.js
 },
-  3: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
+  10: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 'use strict';
 
-var Belt_SetInt = require(4);
+var Belt_SetInt = require(11);
 
 var items = Belt_SetInt.fromArray(/* array */[
       3,
@@ -44544,10 +44129,10 @@ exports.diff = diff;
 /* items Not a pure module */
 //# sourceURL=./node_modules/.docre/DOCRE_CODE_BLOCK_2.re_ppx.js
 },
-  4: function(module, exports, require) {'use strict';
+  11: function(module, exports, require) {'use strict';
 
-var Belt_internalAVLset = require(5);
-var Belt_internalSetInt = require(14);
+var Belt_internalAVLset = require(12);
+var Belt_internalSetInt = require(17);
 
 function add(t, x) {
   if (t !== null) {
@@ -44907,10 +44492,10 @@ exports.checkInvariantInternal = checkInvariantInternal;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_SetInt.js
 },
-  14: function(module, exports, require) {'use strict';
+  17: function(module, exports, require) {'use strict';
 
-var Belt_SortArrayInt = require(15);
-var Belt_internalAVLset = require(5);
+var Belt_SortArrayInt = require(18);
+var Belt_internalAVLset = require(12);
 
 function has(_t, x) {
   while(true) {
@@ -45132,9 +44717,9 @@ exports.fromArray = fromArray;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_internalSetInt.js
 },
-  15: function(module, exports, require) {'use strict';
+  18: function(module, exports, require) {'use strict';
 
-var Belt_Array = require(10);
+var Belt_Array = require(14);
 
 function sortedLengthAuxMore(xs, _prec, _acc, len) {
   while(true) {
@@ -45545,10 +45130,10 @@ exports.diff = diff;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_SortArrayInt.js
 },
-  5: function(module, exports, require) {'use strict';
+  12: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_SortArray = require(9);
+var Curry = require(4);
+var Belt_SortArray = require(13);
 
 function treeHeight(n) {
   if (n !== null) {
@@ -46544,10 +46129,10 @@ exports.removeMinAuxWithRootMutate = removeMinAuxWithRootMutate;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_internalAVLset.js
 },
-  9: function(module, exports, require) {'use strict';
+  13: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Belt_Array = require(10);
+var Curry = require(4);
+var Belt_Array = require(14);
 
 function sortedLengthAuxMore(xs, _prec, _acc, len, lt) {
   while(true) {
@@ -47013,11 +46598,11 @@ exports.diff = diff;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_SortArray.js
 },
-  10: function(module, exports, require) {'use strict';
+  14: function(module, exports, require) {'use strict';
 
-var Curry = require(6);
-var Js_math = require(11);
-var Caml_primitive = require(13);
+var Curry = require(4);
+var Js_math = require(15);
+var Caml_primitive = require(9);
 
 function get(arr, i) {
   if (i >= 0 && i < arr.length) {
@@ -47628,7 +47213,462 @@ exports.eq = eq;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/belt_Array.js
 },
-  13: function(module, exports, require) {'use strict';
+  15: function(module, exports, require) {'use strict';
+
+var Js_int = require(16);
+
+function unsafe_ceil(prim) {
+  return Math.ceil(prim);
+}
+
+function ceil_int(f) {
+  if (f > Js_int.max) {
+    return Js_int.max;
+  } else if (f < Js_int.min) {
+    return Js_int.min;
+  } else {
+    return Math.ceil(f);
+  }
+}
+
+function unsafe_floor(prim) {
+  return Math.floor(prim);
+}
+
+function floor_int(f) {
+  if (f > Js_int.max) {
+    return Js_int.max;
+  } else if (f < Js_int.min) {
+    return Js_int.min;
+  } else {
+    return Math.floor(f);
+  }
+}
+
+function random_int(min, max) {
+  return floor_int(Math.random() * (max - min | 0)) + min | 0;
+}
+
+var ceil = ceil_int;
+
+var floor = floor_int;
+
+exports.unsafe_ceil = unsafe_ceil;
+exports.ceil_int = ceil_int;
+exports.ceil = ceil;
+exports.unsafe_floor = unsafe_floor;
+exports.floor_int = floor_int;
+exports.floor = floor;
+exports.random_int = random_int;
+/* No side effect */
+//# sourceURL=./node_modules/bs-platform/lib/js/js_math.js
+},
+  16: function(module, exports, require) {'use strict';
+
+
+function equal(x, y) {
+  return +(x === y);
+}
+
+var max = 2147483647;
+
+var min = -2147483648;
+
+exports.equal = equal;
+exports.max = max;
+exports.min = min;
+/* No side effect */
+//# sourceURL=./node_modules/bs-platform/lib/js/js_int.js
+},
+  2: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
+'use strict';
+
+var Belt_Id = require(3);
+var Caml_obj = require(7);
+
+var cmp = Caml_obj.caml_compare;
+
+var DayComparator = Belt_Id.MakeComparable(/* module */[/* cmp */cmp]);
+
+var courses = /* array */[
+  /* record */[
+    /* subject */"Math",
+    /* room */"C101",
+    /* days : int array */[
+      /* M */0,
+      /* W */2
+    ]
+  ],
+  /* record */[
+    /* subject */"Art",
+    /* room */"VPA203",
+    /* days : int array */[
+      /* T */1,
+      /* Th */3
+    ]
+  ],
+  /* record */[
+    /* subject */"Psychology",
+    /* room */"A5-212",
+    /* days : int array */[
+      /* M */0,
+      /* Th */3,
+      /* F */4
+    ]
+  ]
+];
+
+var requested = /* int array */[
+  /* T */1,
+  /* W */2
+];
+
+exports.DayComparator = DayComparator;
+exports.courses = courses;
+exports.requested = requested;
+/* DayComparator Not a pure module */
+//# sourceURL=./node_modules/.docre/DOCRE_CODE_BLOCK_1.re_ppx.js
+},
+  7: function(module, exports, require) {'use strict';
+
+var Block = require(8);
+var Caml_primitive = require(9);
+var Caml_builtin_exceptions = require(6);
+
+function caml_obj_block(tag, size) {
+  var v = new Array(size);
+  v.tag = tag;
+  return v;
+}
+
+function caml_obj_dup(x) {
+  var len = x.length | 0;
+  var v = new Array(len);
+  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
+    v[i] = x[i];
+  }
+  v.tag = x.tag | 0;
+  return v;
+}
+
+function caml_obj_truncate(x, new_size) {
+  var len = x.length | 0;
+  if (new_size <= 0 || new_size > len) {
+    throw [
+          Caml_builtin_exceptions.invalid_argument,
+          "Obj.truncate"
+        ];
+  } else if (len !== new_size) {
+    for(var i = new_size ,i_finish = len - 1 | 0; i <= i_finish; ++i){
+      x[i] = 0;
+    }
+    x.length = new_size;
+    return /* () */0;
+  } else {
+    return 0;
+  }
+}
+
+function caml_lazy_make_forward(x) {
+  return Block.__(250, [x]);
+}
+
+function caml_update_dummy(x, y) {
+  var len = y.length | 0;
+  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
+    x[i] = y[i];
+  }
+  var y_tag = y.tag | 0;
+  if (y_tag !== 0) {
+    x.tag = y_tag;
+    return /* () */0;
+  } else {
+    return 0;
+  }
+}
+
+function caml_compare(_a, _b) {
+  while(true) {
+    var b = _b;
+    var a = _a;
+    if (a === b) {
+      return 0;
+    } else {
+      var a_type = typeof a;
+      var b_type = typeof b;
+      if (a_type === "string") {
+        return Caml_primitive.caml_string_compare(a, b);
+      } else {
+        var is_a_number = +(a_type === "number");
+        var is_b_number = +(b_type === "number");
+        if (is_a_number !== 0) {
+          if (is_b_number !== 0) {
+            return Caml_primitive.caml_int_compare(a, b);
+          } else {
+            return -1;
+          }
+        } else if (is_b_number !== 0) {
+          return 1;
+        } else if (a_type === "boolean" || a_type === "undefined" || a === null) {
+          var x = a;
+          var y = b;
+          if (x === y) {
+            return 0;
+          } else if (x < y) {
+            return -1;
+          } else {
+            return 1;
+          }
+        } else if (a_type === "function" || b_type === "function") {
+          throw [
+                Caml_builtin_exceptions.invalid_argument,
+                "compare: functional value"
+              ];
+        } else {
+          var tag_a = a.tag | 0;
+          var tag_b = b.tag | 0;
+          if (tag_a === 250) {
+            _a = a[0];
+            continue ;
+            
+          } else if (tag_b === 250) {
+            _b = b[0];
+            continue ;
+            
+          } else if (tag_a === 248) {
+            return Caml_primitive.caml_int_compare(a[1], b[1]);
+          } else if (tag_a === 251) {
+            throw [
+                  Caml_builtin_exceptions.invalid_argument,
+                  "equal: abstract value"
+                ];
+          } else if (tag_a !== tag_b) {
+            if (tag_a < tag_b) {
+              return -1;
+            } else {
+              return 1;
+            }
+          } else {
+            var len_a = a.length | 0;
+            var len_b = b.length | 0;
+            if (len_a === len_b) {
+              var a$1 = a;
+              var b$1 = b;
+              var _i = 0;
+              var same_length = len_a;
+              while(true) {
+                var i = _i;
+                if (i === same_length) {
+                  return 0;
+                } else {
+                  var res = caml_compare(a$1[i], b$1[i]);
+                  if (res !== 0) {
+                    return res;
+                  } else {
+                    _i = i + 1 | 0;
+                    continue ;
+                    
+                  }
+                }
+              };
+            } else if (len_a < len_b) {
+              var a$2 = a;
+              var b$2 = b;
+              var _i$1 = 0;
+              var short_length = len_a;
+              while(true) {
+                var i$1 = _i$1;
+                if (i$1 === short_length) {
+                  return -1;
+                } else {
+                  var res$1 = caml_compare(a$2[i$1], b$2[i$1]);
+                  if (res$1 !== 0) {
+                    return res$1;
+                  } else {
+                    _i$1 = i$1 + 1 | 0;
+                    continue ;
+                    
+                  }
+                }
+              };
+            } else {
+              var a$3 = a;
+              var b$3 = b;
+              var _i$2 = 0;
+              var short_length$1 = len_b;
+              while(true) {
+                var i$2 = _i$2;
+                if (i$2 === short_length$1) {
+                  return 1;
+                } else {
+                  var res$2 = caml_compare(a$3[i$2], b$3[i$2]);
+                  if (res$2 !== 0) {
+                    return res$2;
+                  } else {
+                    _i$2 = i$2 + 1 | 0;
+                    continue ;
+                    
+                  }
+                }
+              };
+            }
+          }
+        }
+      }
+    }
+  };
+}
+
+function caml_equal(_a, _b) {
+  while(true) {
+    var b = _b;
+    var a = _a;
+    if (a === b) {
+      return /* true */1;
+    } else {
+      var a_type = typeof a;
+      if (a_type === "string" || a_type === "number" || a_type === "boolean" || a_type === "undefined" || a === null) {
+        return /* false */0;
+      } else {
+        var b_type = typeof b;
+        if (a_type === "function" || b_type === "function") {
+          throw [
+                Caml_builtin_exceptions.invalid_argument,
+                "equal: functional value"
+              ];
+        } else if (b_type === "number" || b_type === "undefined" || b === null) {
+          return /* false */0;
+        } else {
+          var tag_a = a.tag | 0;
+          var tag_b = b.tag | 0;
+          if (tag_a === 250) {
+            _a = a[0];
+            continue ;
+            
+          } else if (tag_b === 250) {
+            _b = b[0];
+            continue ;
+            
+          } else if (tag_a === 248) {
+            return +(a[1] === b[1]);
+          } else if (tag_a === 251) {
+            throw [
+                  Caml_builtin_exceptions.invalid_argument,
+                  "equal: abstract value"
+                ];
+          } else if (tag_a !== tag_b) {
+            return /* false */0;
+          } else {
+            var len_a = a.length | 0;
+            var len_b = b.length | 0;
+            if (len_a === len_b) {
+              var a$1 = a;
+              var b$1 = b;
+              var _i = 0;
+              var same_length = len_a;
+              while(true) {
+                var i = _i;
+                if (i === same_length) {
+                  return /* true */1;
+                } else if (caml_equal(a$1[i], b$1[i])) {
+                  _i = i + 1 | 0;
+                  continue ;
+                  
+                } else {
+                  return /* false */0;
+                }
+              };
+            } else {
+              return /* false */0;
+            }
+          }
+        }
+      }
+    }
+  };
+}
+
+function caml_equal_null(x, y) {
+  if (y !== null) {
+    return caml_equal(x, y);
+  } else {
+    return +(x === y);
+  }
+}
+
+function caml_equal_undefined(x, y) {
+  if (y !== undefined) {
+    return caml_equal(x, y);
+  } else {
+    return +(x === y);
+  }
+}
+
+function caml_equal_nullable(x, y) {
+  if (y == null) {
+    return +(x === y);
+  } else {
+    return caml_equal(x, y);
+  }
+}
+
+function caml_notequal(a, b) {
+  return 1 - caml_equal(a, b);
+}
+
+function caml_greaterequal(a, b) {
+  return +(caml_compare(a, b) >= 0);
+}
+
+function caml_greaterthan(a, b) {
+  return +(caml_compare(a, b) > 0);
+}
+
+function caml_lessequal(a, b) {
+  return +(caml_compare(a, b) <= 0);
+}
+
+function caml_lessthan(a, b) {
+  return +(caml_compare(a, b) < 0);
+}
+
+function caml_min(x, y) {
+  if (caml_compare(x, y) <= 0) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+function caml_max(x, y) {
+  if (caml_compare(x, y) >= 0) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+exports.caml_obj_block = caml_obj_block;
+exports.caml_obj_dup = caml_obj_dup;
+exports.caml_obj_truncate = caml_obj_truncate;
+exports.caml_lazy_make_forward = caml_lazy_make_forward;
+exports.caml_update_dummy = caml_update_dummy;
+exports.caml_compare = caml_compare;
+exports.caml_equal = caml_equal;
+exports.caml_equal_null = caml_equal_null;
+exports.caml_equal_undefined = caml_equal_undefined;
+exports.caml_equal_nullable = caml_equal_nullable;
+exports.caml_notequal = caml_notequal;
+exports.caml_greaterequal = caml_greaterequal;
+exports.caml_greaterthan = caml_greaterthan;
+exports.caml_lessthan = caml_lessthan;
+exports.caml_lessequal = caml_lessequal;
+exports.caml_min = caml_min;
+exports.caml_max = caml_max;
+/* No side effect */
+//# sourceURL=./node_modules/bs-platform/lib/js/caml_obj.js
+},
+  9: function(module, exports, require) {'use strict';
 
 
 function caml_int_compare(x, y) {
@@ -47767,76 +47807,92 @@ exports.caml_int32_max = caml_int32_max;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/caml_primitive.js
 },
-  11: function(module, exports, require) {'use strict';
+  8: function(module, exports, require) {'use strict';
 
-var Js_int = require(12);
 
-function unsafe_ceil(prim) {
-  return Math.ceil(prim);
+function __(tag, block) {
+  block.tag = tag;
+  return block;
 }
 
-function ceil_int(f) {
-  if (f > Js_int.max) {
-    return Js_int.max;
-  } else if (f < Js_int.min) {
-    return Js_int.min;
-  } else {
-    return Math.ceil(f);
-  }
-}
-
-function unsafe_floor(prim) {
-  return Math.floor(prim);
-}
-
-function floor_int(f) {
-  if (f > Js_int.max) {
-    return Js_int.max;
-  } else if (f < Js_int.min) {
-    return Js_int.min;
-  } else {
-    return Math.floor(f);
-  }
-}
-
-function random_int(min, max) {
-  return floor_int(Math.random() * (max - min | 0)) + min | 0;
-}
-
-var ceil = ceil_int;
-
-var floor = floor_int;
-
-exports.unsafe_ceil = unsafe_ceil;
-exports.ceil_int = ceil_int;
-exports.ceil = ceil;
-exports.unsafe_floor = unsafe_floor;
-exports.floor_int = floor_int;
-exports.floor = floor;
-exports.random_int = random_int;
+exports.__ = __;
 /* No side effect */
-//# sourceURL=./node_modules/bs-platform/lib/js/js_math.js
+//# sourceURL=./node_modules/bs-platform/lib/js/block.js
 },
-  12: function(module, exports, require) {'use strict';
+  3: function(module, exports, require) {'use strict';
 
+var Curry = require(4);
 
-function equal(x, y) {
-  return +(x === y);
+function MakeComparableU(M) {
+  var cmp = M[/* cmp */0];
+  return /* module */[/* cmp */cmp];
 }
 
-var max = 2147483647;
+function MakeComparable(M) {
+  var cmp = M[/* cmp */0];
+  var cmp$1 = Curry.__2(cmp);
+  return /* module */[/* cmp */cmp$1];
+}
 
-var min = -2147483648;
+function comparableU(cmp) {
+  return /* module */[/* cmp */cmp];
+}
 
-exports.equal = equal;
-exports.max = max;
-exports.min = min;
+function comparable(cmp) {
+  var cmp$1 = Curry.__2(cmp);
+  return /* module */[/* cmp */cmp$1];
+}
+
+function MakeHashableU(M) {
+  var hash = M[/* hash */0];
+  var eq = M[/* eq */1];
+  return /* module */[
+          /* hash */hash,
+          /* eq */eq
+        ];
+}
+
+function MakeHashable(M) {
+  var hash = M[/* hash */0];
+  var hash$1 = Curry.__1(hash);
+  var eq = M[/* eq */1];
+  var eq$1 = Curry.__2(eq);
+  return /* module */[
+          /* hash */hash$1,
+          /* eq */eq$1
+        ];
+}
+
+function hashableU(hash, eq) {
+  return /* module */[
+          /* hash */hash,
+          /* eq */eq
+        ];
+}
+
+function hashable(hash, eq) {
+  var hash$1 = Curry.__1(hash);
+  var eq$1 = Curry.__2(eq);
+  return /* module */[
+          /* hash */hash$1,
+          /* eq */eq$1
+        ];
+}
+
+exports.MakeComparableU = MakeComparableU;
+exports.MakeComparable = MakeComparable;
+exports.comparableU = comparableU;
+exports.comparable = comparable;
+exports.MakeHashableU = MakeHashableU;
+exports.MakeHashable = MakeHashable;
+exports.hashableU = hashableU;
+exports.hashable = hashable;
 /* No side effect */
-//# sourceURL=./node_modules/bs-platform/lib/js/js_int.js
+//# sourceURL=./node_modules/bs-platform/lib/js/belt_Id.js
 },
-  6: function(module, exports, require) {'use strict';
+  4: function(module, exports, require) {'use strict';
 
-var Caml_array = require(7);
+var Caml_array = require(5);
 
 function app(_f, _args) {
   while(true) {
@@ -48469,9 +48525,9 @@ exports.__8 = __8;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/curry.js
 },
-  7: function(module, exports, require) {'use strict';
+  5: function(module, exports, require) {'use strict';
 
-var Caml_builtin_exceptions = require(8);
+var Caml_builtin_exceptions = require(6);
 
 function caml_array_sub(x, offset, len) {
   var result = new Array(len);
@@ -48594,7 +48650,7 @@ exports.caml_array_set = caml_array_set;
 /* No side effect */
 //# sourceURL=./node_modules/bs-platform/lib/js/caml_array.js
 },
-  8: function(module, exports, require) {'use strict';
+  6: function(module, exports, require) {'use strict';
 
 
 var out_of_memory = /* tuple */[
@@ -48695,48 +48751,6 @@ exports.assert_failure = assert_failure;
 exports.undefined_recursive_module = undefined_recursive_module;
 /*  Not a pure module */
 //# sourceURL=./node_modules/bs-platform/lib/js/caml_builtin_exceptions.js
-},
-  2: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
-'use strict';
-
-
-var courses = /* array */[
-  /* record */[
-    /* subject */"Math",
-    /* room */"C101",
-    /* days : int array */[
-      /* M */0,
-      /* W */2
-    ]
-  ],
-  /* record */[
-    /* subject */"Art",
-    /* room */"VPA203",
-    /* days : int array */[
-      /* T */1,
-      /* Th */3
-    ]
-  ],
-  /* record */[
-    /* subject */"Psychology",
-    /* room */"A5-212",
-    /* days : int array */[
-      /* M */0,
-      /* Th */3,
-      /* F */4
-    ]
-  ]
-];
-
-var requested = /* int array */[
-  /* T */1,
-  /* W */2
-];
-
-exports.courses = courses;
-exports.requested = requested;
-/* No side effect */
-//# sourceURL=./node_modules/.docre/DOCRE_CODE_BLOCK_1.re_ppx.js
 },
   1: function(module, exports, require) {// Generated by BUCKLESCRIPT VERSION 2.2.3, PLEASE EDIT WITH CARE
 /* This output is empty. Its source's type definitions, externals and/or unused code got optimized away. */
@@ -48887,27 +48901,27 @@ let nameMap = {
   "./node_modules/.docre/DOCRE_CODE_BLOCK_8.re_ppx.js": 25,
   "./node_modules/.docre/DOCRE_CODE_BLOCK_6.re_ppx.js": 24,
   "./node_modules/.docre/DOCRE_CODE_BLOCK_5.re_ppx.js": 23,
-  "./node_modules/.docre/DOCRE_CODE_BLOCK_4.re_ppx.js": 17,
-  "./node_modules/bs-platform/lib/js/caml_obj.js": 21,
-  "./node_modules/bs-platform/lib/js/block.js": 22,
-  "./node_modules/bs-platform/lib/js/belt_Set.js": 19,
-  "./node_modules/bs-platform/lib/js/belt_SetDict.js": 20,
-  "./node_modules/bs-platform/lib/js/belt_Id.js": 18,
-  "./node_modules/.docre/DOCRE_CODE_BLOCK_3.re_ppx.js": 16,
-  "./node_modules/.docre/DOCRE_CODE_BLOCK_2.re_ppx.js": 3,
-  "./node_modules/bs-platform/lib/js/belt_SetInt.js": 4,
-  "./node_modules/bs-platform/lib/js/belt_internalSetInt.js": 14,
-  "./node_modules/bs-platform/lib/js/belt_SortArrayInt.js": 15,
-  "./node_modules/bs-platform/lib/js/belt_internalAVLset.js": 5,
-  "./node_modules/bs-platform/lib/js/belt_SortArray.js": 9,
-  "./node_modules/bs-platform/lib/js/belt_Array.js": 10,
-  "./node_modules/bs-platform/lib/js/caml_primitive.js": 13,
-  "./node_modules/bs-platform/lib/js/js_math.js": 11,
-  "./node_modules/bs-platform/lib/js/js_int.js": 12,
-  "./node_modules/bs-platform/lib/js/curry.js": 6,
-  "./node_modules/bs-platform/lib/js/caml_array.js": 7,
-  "./node_modules/bs-platform/lib/js/caml_builtin_exceptions.js": 8,
+  "./node_modules/.docre/DOCRE_CODE_BLOCK_4.re_ppx.js": 20,
+  "./node_modules/bs-platform/lib/js/belt_Set.js": 21,
+  "./node_modules/bs-platform/lib/js/belt_SetDict.js": 22,
+  "./node_modules/.docre/DOCRE_CODE_BLOCK_3.re_ppx.js": 19,
+  "./node_modules/.docre/DOCRE_CODE_BLOCK_2.re_ppx.js": 10,
+  "./node_modules/bs-platform/lib/js/belt_SetInt.js": 11,
+  "./node_modules/bs-platform/lib/js/belt_internalSetInt.js": 17,
+  "./node_modules/bs-platform/lib/js/belt_SortArrayInt.js": 18,
+  "./node_modules/bs-platform/lib/js/belt_internalAVLset.js": 12,
+  "./node_modules/bs-platform/lib/js/belt_SortArray.js": 13,
+  "./node_modules/bs-platform/lib/js/belt_Array.js": 14,
+  "./node_modules/bs-platform/lib/js/js_math.js": 15,
+  "./node_modules/bs-platform/lib/js/js_int.js": 16,
   "./node_modules/.docre/DOCRE_CODE_BLOCK_1.re_ppx.js": 2,
+  "./node_modules/bs-platform/lib/js/caml_obj.js": 7,
+  "./node_modules/bs-platform/lib/js/caml_primitive.js": 9,
+  "./node_modules/bs-platform/lib/js/block.js": 8,
+  "./node_modules/bs-platform/lib/js/belt_Id.js": 3,
+  "./node_modules/bs-platform/lib/js/curry.js": 4,
+  "./node_modules/bs-platform/lib/js/caml_array.js": 5,
+  "./node_modules/bs-platform/lib/js/caml_builtin_exceptions.js": 6,
   "./node_modules/.docre/DOCRE_CODE_BLOCK_0.re_ppx.js": 1
 }
 let require = (id) => {

@@ -23,7 +23,13 @@ let courses = [|
 |];
 
 let requested = [|T, W|];
-
+module DayComparator =
+  Belt.Id.MakeComparable(
+    {
+      type t = weekday;
+      let cmp = compare;
+    },
+  );
 ```
 
 ```reason;no-run
@@ -97,7 +103,7 @@ To tell `Belt.Set` how to compare a custom type, you create a module that includ
 
 Here is the code for comparing days of the week:
 
-```reason;shared(Days);use(Days)
+```txt
 module DayComparator =
   Belt.Id.MakeComparable(
     {
